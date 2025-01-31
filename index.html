@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Website Below -->
-    <title>Test</title>
+    <title>Nature' Platter website By Rakib</title>
 
-    <!-- Link Tailwind CSS Using CLI -->
+    <!-- Link Tailwind CSS Using CDN -->
 
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -36,12 +36,24 @@
     />
 
     <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .sora {
+        font-family: "Sora", serif;
+      }
+    </style>
   </head>
-  <body class="">
+  <body class="sora">
     <!-- Header Section Started -->
-    <header class="max-w-[1600px] mx-auto">
+    <header class="max-w-[1600px] mx-auto bg-[#EBE3C8]">
       <nav
-        class="flex items-center justify-between p-4 border-2 border-green-300 lg:border-0"
+        class="p-4 flex items-center justify-between border-2 border-green-300 lg:border-0"
       >
         <figure>
           <img src="c2-assets/logo-header.png" alt="Logo" />
@@ -71,7 +83,7 @@
       </nav>
 
       <section
-        class="w-full lg:w-9/12 mx-auto mt-14 flex flex-col items-center gap-6 p-4"
+        class="w-full lg:w-9/12 mx-auto mt-14 flex flex-col items-center gap-6 px-5"
       >
         <div class="text-center w-full lg:w-11/12 mx-auto">
           <h1 class="text-5xl lg:text-6xl font-bold mb-3.5">
@@ -105,7 +117,7 @@
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
           <div
-            class="p-6 lg:p-10 bg-orange-100 flex flex-col items-center gap-4 rounded-2xl"
+            class="bg-[#EBE3C8] p-6 lg:p-10 flex flex-col items-center gap-4 rounded-2xl"
           >
             <figure class="bg-white p-5 rounded-full">
               <img src="c2-assets/service.png" alt="Services" class="w-full" />
@@ -117,7 +129,7 @@
             </p>
           </div>
           <div
-            class="p-6 lg:p-10 bg-orange-100 flex flex-col items-center gap-4 rounded-2xl"
+            class="bg-[#EBE3C8] p-6 lg:p-10 flex flex-col items-center gap-4 rounded-2xl"
           >
             <figure class="bg-white p-5 rounded-full">
               <img src="c2-assets/delivery.png" alt="delivery" class="w-full" />
@@ -129,7 +141,7 @@
             </p>
           </div>
           <div
-            class="p-6 lg:p-10 bg-orange-100 flex flex-col items-center gap-4 rounded-2xl"
+            class="bg-[#EBE3C8] p-6 lg:p-10 flex flex-col items-center gap-4 rounded-2xl"
           >
             <figure class="bg-white p-5 rounded-full">
               <img src="c2-assets/healthy.png" alt="healthy" class="w-full" />
@@ -145,14 +157,16 @@
       <!-- Services section ended here-->
 
       <!-- Products section started here-->
-      <section class="bg-red-400 py-10 px-2.5">
+      <section class="bg-[#EBE3C8] mx-4 py-14 px-4 lg:px-8 my-10">
         <h3 class="text-4xl font-bold text-green-400 mb-10">
           Popular Products
         </h3>
 
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-3">
-          <div class="bg-gradient-to-r from-green-600 to-green-300 relative">
-            <figure class="absolute bottom-0 right-0 w-1/4 lg:w-fit">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-y-4 lg:gap-3">
+          <div
+            class="rounded-xl bg-gradient-to-r from-green-400 via-green-500 to-green-100 relative"
+          >
+            <figure class="absolute bottom-0 right-0 w-2/5 lg:w-fit">
               <img
                 src="c2-assets/vegetable-offer.png"
                 alt="offer"
@@ -160,16 +174,20 @@
               />
             </figure>
 
-            <div class="px-10 py-5 flex flex-col items-start gap-2.5">
+            <div
+              class="w-4/5 px-10 pt-10 pb-20 lg:py-5 flex flex-col items-start gap-2.5"
+            >
               <h4 class="text-xl font-semibold text-white">30% off</h4>
               <p>Shop your daily essentials at unbeatable prices.</p>
               <button class="bg-white px-4 py-2 rounded-xl">Buy Now</button>
             </div>
           </div>
 
-          <div class="grid grid-cols-2 lg:grid-cols-3 col-span-2 gap-5">
-            <div class="bg-white p-4 flex gap-2.5 items-center">
-              <figure>
+          <div class="grid grid-cols-2 lg:grid-cols-3 col-span-2 gap-2.5">
+            <div
+              class="bg-white py-4 px-2 flex gap-2.5 items-center rounded-xl"
+            >
+              <figure class="bg-[#EBE3C8] rounded-xl">
                 <img src="c2-assets/onion.png" alt="onion" class="w-full" />
               </figure>
               <div>
@@ -181,8 +199,10 @@
                 <p class="font-medium">$39.99</p>
               </div>
             </div>
-            <div class="bg-white p-4 flex gap-2.5 items-center">
-              <figure>
+            <div
+              class="bg-white py-4 px-2 flex gap-2.5 items-center rounded-xl"
+            >
+              <figure class="bg-[#EBE3C8] rounded-xl">
                 <img src="c2-assets/tomato.png" alt="tomato" class="w-full" />
               </figure>
               <div>
@@ -194,8 +214,10 @@
                 <p class="font-medium">$39.99</p>
               </div>
             </div>
-            <div class="bg-white p-4 flex gap-2.5 items-center">
-              <figure>
+            <div
+              class="bg-white py-4 px-2 flex gap-2.5 items-center rounded-xl"
+            >
+              <figure class="bg-[#EBE3C8] rounded-xl">
                 <img src="c2-assets/potato.png" alt="potato" class="w-full" />
               </figure>
               <div>
@@ -207,8 +229,10 @@
                 <p class="font-medium">$39.99</p>
               </div>
             </div>
-            <div class="bg-white p-4 flex gap-2.5 items-center">
-              <figure>
+            <div
+              class="bg-white py-4 px-2 flex gap-2.5 items-center rounded-xl"
+            >
+              <figure class="bg-[#EBE3C8] rounded-xl">
                 <img src="c2-assets/onion.png" alt="onion" class="w-full" />
               </figure>
               <div>
@@ -220,8 +244,10 @@
                 <p class="font-medium">$39.99</p>
               </div>
             </div>
-            <div class="bg-white p-4 flex gap-2.5 items-center">
-              <figure>
+            <div
+              class="bg-white py-4 px-2 flex gap-2.5 items-center rounded-xl"
+            >
+              <figure class="bg-[#EBE3C8] rounded-xl">
                 <img src="c2-assets/tomato.png" alt="tomato" class="w-full" />
               </figure>
               <div>
@@ -233,8 +259,10 @@
                 <p class="font-medium">$39.99</p>
               </div>
             </div>
-            <div class="bg-white p-4 flex gap-2.5 items-center">
-              <figure>
+            <div
+              class="bg-white py-4 px-2 flex gap-2.5 items-center rounded-xl"
+            >
+              <figure class="bg-[#EBE3C8] rounded-xl">
                 <img src="c2-assets/potato.png" alt="potato" class="w-full" />
               </figure>
               <div>
@@ -246,8 +274,10 @@
                 <p class="font-medium">$39.99</p>
               </div>
             </div>
-            <div class="bg-white p-4 flex gap-2.5 items-center">
-              <figure>
+            <div
+              class="bg-white py-4 px-2 flex gap-2.5 items-center rounded-xl"
+            >
+              <figure class="bg-[#EBE3C8] rounded-xl">
                 <img src="c2-assets/onion.png" alt="onion" class="w-full" />
               </figure>
               <div>
@@ -259,8 +289,10 @@
                 <p class="font-medium">$39.99</p>
               </div>
             </div>
-            <div class="bg-white p-4 flex gap-2.5 items-center">
-              <figure>
+            <div
+              class="bg-white py-4 px-2 flex gap-2.5 items-center rounded-xl"
+            >
+              <figure class="bg-[#EBE3C8] rounded-xl">
                 <img src="c2-assets/tomato.png" alt="tomato" class="w-full" />
               </figure>
               <div>
@@ -273,8 +305,10 @@
               </div>
             </div>
             <div class="hidden lg:block">
-              <div class="bg-white p-4 flex gap-2.5 items-center">
-                <figure>
+              <div
+                class="bg-white py-4 px-2 flex gap-2.5 items-center rounded-xl"
+              >
+                <figure class="bg-[#EBE3C8] rounded-xl">
                   <img src="c2-assets/potato.png" alt="potato" class="w-full" />
                 </figure>
                 <div>
@@ -291,10 +325,149 @@
         </div>
       </section>
       <!-- Products section ended here-->
+
+      <!-- Offers section started here-->
+      <section class="mx-4 my-10">
+        <h3 class="text-4xl font-bold text-green-700 mb-10">
+          Arrival & Offers
+        </h3>
+
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-5">
+          <div
+            class="lg:col-span-3 bg-green-900 flex items-center justify-between p-5 rounded-xl"
+          >
+            <div class="flex flex-col items-start gap-3.5 text-white w-full">
+              <figure class="w-3/5 lg:w-2/5">
+                <img
+                  src="c2-assets/dawat-logo.png"
+                  alt="dawat-logo"
+                  class="w-full"
+                />
+              </figure>
+              <button
+                class="bg-green-300 px-3.5 p-1.5 text-xl font-semibold rounded-xl"
+              >
+                Cook Exotic Dishes
+              </button>
+              <h3 class="text-3xl font-bold">
+                <span class="font-semibold">UP to</span> 20% OFF
+              </h3>
+            </div>
+
+            <figure class="">
+              <img src="c2-assets/dawat-mock-up.png" alt="dawat-mock-up" />
+            </figure>
+          </div>
+          <div
+            class="lg:col-span-2 bg-blue-950 flex items-center justify-between p-5 rounded-xl"
+          >
+            <div class="flex flex-col items-start gap-3.5 text-white">
+              <figure class="w-2/5">
+                <img
+                  src="c2-assets/india-gate-logo.png"
+                  alt="india-gate-logo"
+                  class="w-full"
+                />
+              </figure>
+              <button
+                class="bg-blue-600 px-3.5 p-1.5 text-xl font-semibold rounded-xl"
+              >
+                World's No.1 Rice
+              </button>
+              <h3 class="text-3xl font-bold">
+                <span class="font-semibold">UP to</span> 40% OFF
+              </h3>
+            </div>
+
+            <figure class="">
+              <img
+                src="c2-assets/india-gate-mock-up.png"
+                alt="india-gate-mock-up"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+      <!-- Offers section ended here-->
+
+      <!-- Grocery News section started here-->
+      <section class="relative mt-96 lg:mt-80">
+        <section
+          class="bg-[#EBE3C8] grid grid-cols-1 lg:grid-cols-2 items-center px-10 py-5 gap-10 rounded-xl w-9/12 mx-auto absolute -top-80 left-20 lg:-top-60 lg:left-40"
+        >
+          <figure class="">
+            <img
+              src="c2-assets/vegetable-busket.png"
+              alt="vegetable-busket"
+              class="w-full"
+            />
+          </figure>
+
+          <div class="flex flex-col items-start gap-5 p-5">
+            <h4 class="text-4xl font-bold">Get Grocery News!</h4>
+            <p class="text-xl">
+              Exclusive training tips, ticks, product deals and more.
+            </p>
+            <label class="input input-bordered flex items-center gap-5">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                class="h-5 w-5 opacity-90"
+              >
+                <path
+                  d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z"
+                />
+                <path
+                  d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z"
+                />
+              </svg>
+              <input type="text" class="grow" placeholder="Type your email" />
+            </label>
+
+            <button
+              class="px-5 py-2 bg-green-700 text-white font-semibold rounded-xl"
+            >
+              Subscribe
+            </button>
+          </div>
+        </section>
+
+        <!-- Footer Section Started -->
+
+        <footer
+          class="max-w-[1600px] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-5 bg-green-600 px-10 pt-96 lg:pt-80 pb-16"
+        >
+          <aside class="flex flex-col items-start gap-2.5">
+            <figure>
+              <img src="c2-assets/logo-footer.png" alt="logo-footer" />
+            </figure>
+            <p>
+              Discover a world of treats, toys, and essentials handpicked for
+              your furry friends
+              <br />
+              Providing reliable vegetables since 1992
+            </p>
+          </aside>
+          <nav class="flex flex-col gap-2.5">
+            <h6 class="footer-title">Services</h6>
+            <a class="link link-hover">Branding</a>
+            <a class="link link-hover">Design</a>
+            <a class="link link-hover">Marketing</a>
+            <a class="link link-hover">Advertisement</a>
+          </nav>
+          <nav class="flex flex-col gap-2.5">
+            <h6 class="footer-title">Company</h6>
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Contact</a>
+            <a class="link link-hover">Jobs</a>
+            <a class="link link-hover">Press kit</a>
+          </nav>
+        </footer>
+        <!-- Footer Section Ended -->
+      </section>
+      <!-- Grocery News section ended here-->
     </main>
     <!-- Main Section Ended -->
-    <!-- Footer Section Started -->
-    <footer class="max-w-[1600px] mx-auto"></footer>
-    <!-- Footer Section Ended -->
   </body>
 </html>
